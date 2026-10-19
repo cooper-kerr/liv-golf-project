@@ -1,0 +1,14 @@
+source_id,organization,source_family,base_url,priority,uses,access_notes
+pga_official,PGA Tour,official leaderboard and statistics,https://www.pgatour.com,1,event inventory; full fields; scorecards; season statistics,Use event-specific leaderboard and player-stat URLs; record retrieved_at and exact URL.
+pga_official_user_screenshot,PGA Tour,official player-stat page viewed in user-provided screenshot,https://www.pgatour.com,1,2019 Jordan Spieth historical season-stat confirmation,Screenshot was supplied in conversation on 2026-10-19 and is not archived in the repository; retain exact page URL and season label.
+dpwt_official,DP World Tour,official leaderboard and statistics,https://www.europeantour.com/dpworld-tour,1,event inventory; full fields; scorecards; season statistics,Retain tour season as published; co-sanctioned events require deduplication.
+liv_official,LIV Golf,official leaderboard and schedule,https://www.livgolf.com,1,LIV appearances; full fields; scores; format,Include substitutes and former members; team totals are not individual stroke-play observations.
+masters_official,The Masters,official leaderboard,https://www.masters.com,1,Masters fields and results,Use championship leaderboard rather than a tour copy when available.
+usga_official,USGA,official leaderboard,https://www.usopen.com,1,U.S. Open fields and results,Use championship leaderboard rather than a tour copy when available.
+randa_official,R&A,official leaderboard,https://www.theopen.com,1,The Open fields and results,The 2020 Open Championship was cancelled and is not a played event.
+pga_championship_official,PGA of America,official leaderboard,https://www.pgachampionship.com,1,PGA Championship fields and results,Use championship leaderboard rather than a tour copy when available.
+espn_fallback,ESPN,golf leaderboard,https://www.espn.com/golf,2,fallback field and result verification,Use only where an official source is missing or inaccessible; mark source_priority 2.
+datagolf_public,Data Golf,public tournament pages,https://datagolf.com,3,supplemental SG and components,Historical component tables may require a subscription; never fabricate unavailable components.
+otis_pga_stats_restatement,OTIS Golf,secondary PGA TOUR season-stat restatement,https://otisgolf.com,2,provisional historical PGA TOUR season statistics,Restates PGA TOUR season figures; retain exact season and measured-round denominator; reconcile against official PGA TOUR before analysis.
+golfnewsnet_fallback,Golf News Net,published final leaderboards,https://thegolfnewsnet.com,2,finishers and round scores,Published tables usually omit missed cuts and withdrawals; mark incomplete fields explicitly.
+wikipedia_fallback,Wikipedia,tournament result tables,https://en.wikipedia.org/wiki,3,secondary field and cut-score verification,Use only when an official or tour leaderboard cannot be extracted; cross-check field and totals before marking complete.

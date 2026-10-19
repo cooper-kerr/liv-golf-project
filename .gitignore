@@ -1,3 +1,10 @@
 # Project reference and status materials
 project-context/
 current-status/
+
+# Downloaded public pages can be regenerated from source_requests.csv. Keep
+# declarations, templates, and derived tables under version control instead.
+data/raw/*
+!data/raw/.gitkeep
+reports/*.json
+!reports/coverage_report.json

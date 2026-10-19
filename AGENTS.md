@@ -1,23 +1,29 @@
 # Repository Guidelines
 
-## Project Structure
+## Project Structure and Current State
 
-- `project-context/` contains assignment prompts, example projects, research references, and earlier course check-ins.
-- `current-status/` contains the latest annotated project check-ins. Treat these as the current project record and consult them before changing the research plan.
-- This repository currently has no source-code, test, or build directories. Add new analysis, data, figures, and write-ups in clearly named folders as the visualization work develops; keep source data distinct from derived outputs.
+- Read `current-status/` before changing the research plan; `project-context/` holds prompts and earlier check-ins.
+- `data/reference/` has event/source manifests; `data/staging/observed_leaderboard_rows.csv` is the curated score input; `data/normalized/` has experimental tables. Keep `data/raw/` snapshots untracked. `scripts/` contains the authoritative Ruby build and validator; `docs/` and `reports/` explain fields and coverage.
+- Current pilot: 30 sourced events (14 majors, five PGA Tour, three DP World Tour, eight LIV), 2,486 player-event results, 8,302 rounds, and 625 players. Twenty-one fields are complete. All 2024–2025 majors and the 2026 Masters have full fields, but this is not a complete 2018–2026 dataset.
 
-## Build, Development, and Validation
+## Reproduce and Validate
 
-There is no configured build command, dependency manifest, or automated test suite. Do not assume a particular language or toolchain. Document the steps needed to regenerate any analysis or figure alongside the relevant deliverable. Before sharing a visualization, check that its labels, units, sample, time period, and data source are clear, and that its values agree with the underlying data.
+Run from the repository root:
 
-## Style and Naming
+```sh
+ruby --disable-gems scripts/materialize_observed_data.rb
+ruby --disable-gems scripts/validate_observed_data.rb
+```
 
-Use descriptive, consistent filenames. For example, name figures `figure-01-major-participation-by-year.png` and dated project notes `YYYY-MM-DD-topic.md`. Keep figure titles, axis labels, legends, and source notes readable and consistent across the set. If analysis code is introduced, follow the conventions and formatter of the selected language or tool; avoid adding formatting tools without a project need.
+The materializer reads the curated scores and `data/reference/observed_event_sources.csv`, then regenerates normalized CSVs, `source_requests.csv`, and `reports/coverage_report.json`. The older Python scripts are collection scaffolding, not the authoritative build. No separate automated test framework is configured.
 
-## Testing and Review
+## Data Rules and Next Steps
 
-No automated tests are configured. Validate changes by reproducing affected figures or tables from the stated inputs, checking calculations and missing observations, and reviewing the rendered output at its intended size. Explain any data limitations that affect interpretation.
+- Record exact source URLs, retrieval dates, field counts, and completeness. Preserve cuts, withdrawals, unknown starts, and blanks; never convert missing results to zero. Check player aliases, unique keys, score sums, and SG zero-centering after additions.
+- Field-relative SG requires complete event-round-course scoring groups and is not a cross-tour ability rating. Profile starts are observed lower bounds. Of 5,950 major-panel cells, 3,996 remain unknown; most LIV debut dates are unverified.
+- Data Golf historical stats/API require subscription access for much of this period. Source SG, components, driving distance, and season statistics still have zero observations. The 2026 PGA Championship, U.S. Open, and Open need authoritative full-field reconciliation: public secondary tables omit entries or contain score-total conflicts. Cross-check Wikipedia-backed 2024–2025 majors against official scorecards. Preserve 2025 RBC Heritage regulation strokes separately from its playoff.
+- Expand regular-tour/LIV event coverage and source-ID crosswalks; collect defined season distance/SG measures where public; update both coverage reports. Use descriptive filenames such as `figure-01-major-participation-by-year.png`.
 
-## Commits and Pull Requests
+## Commits and Review
 
-No repository-specific commit convention or PR workflow is documented. Use short, imperative commit subjects, such as `Add major participation trend figure`. A pull request should summarize the research or visualization change, identify data sources and reproduction steps, note relevant limitations, and include figure previews when visuals change.
+Use short imperative subjects, e.g. `Add major field results`. In PRs, summarize sources, reproduction steps, missingness, and affected figures. Review visual labels, units, periods, and source notes against the data.

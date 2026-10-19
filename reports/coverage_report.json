@@ -1,0 +1,444 @@
+{
+  "generated_at_utc": "2026-10-19",
+  "major_inventory_events": 35,
+  "observed_events": 30,
+  "verified_complete_fields": 21,
+  "player_event_rows": 2486,
+  "player_round_rows": 8302,
+  "distinct_players": 625,
+  "major_cohort_players_observed": 170,
+  "major_panel_rows": 5950,
+  "major_panel_participation": {
+    "0": 1019,
+    "unknown": 3996,
+    "1": 935
+  },
+  "treatment_status_at_major": {
+    "0": 2901,
+    "unknown": 2364,
+    "1": 685
+  },
+  "verified_liv_debuts": 61,
+  "events_by_group_year": {
+    "major:2018": 1,
+    "pga:2018": 1,
+    "major:2021": 1,
+    "pga:2022": 1,
+    "major:2022": 2,
+    "liv:2022": 4,
+    "dpwt:2022": 1,
+    "major:2023": 1,
+    "dpwt:2023": 1,
+    "pga:2024": 1,
+    "liv:2024": 2,
+    "major:2024": 4,
+    "liv:2025": 1,
+    "major:2025": 4,
+    "pga:2025": 1,
+    "liv:2026": 1,
+    "major:2026": 1,
+    "pga:2026": 1,
+    "dpwt:2026": 1
+  },
+  "results_by_group_year": {
+    "major:2018": 87,
+    "pga:2018": 75,
+    "major:2021": 77,
+    "pga:2022": 38,
+    "major:2022": 130,
+    "liv:2022": 192,
+    "dpwt:2022": 50,
+    "major:2023": 53,
+    "dpwt:2023": 69,
+    "liv:2024": 108,
+    "major:2024": 558,
+    "liv:2025": 54,
+    "liv:2026": 57,
+    "major:2026": 91,
+    "pga:2026": 81,
+    "dpwt:2026": 72,
+    "major:2025": 563,
+    "pga:2024": 59,
+    "pga:2025": 72
+  },
+  "rounds_by_group_year": {
+    "major:2018": 280,
+    "pga:2018": 300,
+    "major:2021": 308,
+    "pga:2022": 152,
+    "major:2022": 520,
+    "liv:2022": 570,
+    "dpwt:2022": 200,
+    "major:2023": 212,
+    "dpwt:2023": 276,
+    "liv:2024": 324,
+    "major:2024": 1693,
+    "liv:2025": 162,
+    "liv:2026": 228,
+    "major:2026": 290,
+    "pga:2026": 324,
+    "dpwt:2026": 288,
+    "major:2025": 1651,
+    "pga:2024": 236,
+    "pga:2025": 288
+  },
+  "calculated_sg_rounds_by_group_year": {
+    "major:2018": 280,
+    "pga:2022": 152,
+    "liv:2022": 432,
+    "dpwt:2022": 200,
+    "liv:2024": 324,
+    "major:2024": 1693,
+    "liv:2025": 162,
+    "liv:2026": 228,
+    "major:2026": 290,
+    "major:2025": 1651,
+    "pga:2024": 236,
+    "pga:2025": 288
+  },
+  "season_stat_rows": 559,
+  "season_stats_by_tour_metric": {
+    "LIV:2026:scrambling_pct": 57,
+    "LIV:2026:greens_in_regulation_pct": 57,
+    "LIV:2026:putting_average_per_hole": 57,
+    "LIV:2026:driving_distance_yards": 57,
+    "PGA Tour:2026:scrambling_pct": 81,
+    "PGA Tour:2026:greens_in_regulation_pct": 81,
+    "PGA Tour:2026:putting_average_on_gir": 81,
+    "PGA Tour:2026:driving_distance_yards": 81,
+    "PGA Tour:2019:sg_total_per_round": 1,
+    "PGA Tour:2019:sg_putting_per_round": 1,
+    "PGA Tour:2019:scrambling_pct": 1,
+    "PGA Tour:2018:sg_total_per_round": 1,
+    "PGA Tour:2018:sg_putting_per_round": 1,
+    "PGA Tour:2018:scrambling_pct": 1,
+    "PGA Tour:2019:driving_distance_yards": 1
+  },
+  "metric_observations": {
+    "strokes": 8302,
+    "field_relative_sg": 5936,
+    "source_overall_sg": 0,
+    "source_sg_components": 0,
+    "driving_distance": 0
+  },
+  "event_gaps": [
+    {
+      "event_id": "major-2018-masters",
+      "expected_starters": "87",
+      "observed_classified_finishers": "53",
+      "field_verified_complete": "yes",
+      "note": "Official PDF includes 53 classified finishers and 34 missed cuts."
+    },
+    {
+      "event_id": "pga-2018-wells-fargo",
+      "expected_starters": null,
+      "observed_classified_finishers": "75",
+      "field_verified_complete": "no",
+      "note": "Published table contains classified finishers only."
+    },
+    {
+      "event_id": "major-2021-open",
+      "expected_starters": "156",
+      "observed_classified_finishers": "77",
+      "field_verified_complete": "no",
+      "note": "Published table contains classified finishers only."
+    },
+    {
+      "event_id": "pga-2022-sentry",
+      "expected_starters": "38",
+      "observed_classified_finishers": "38",
+      "field_verified_complete": "yes",
+      "note": "No-cut field reconciles to published 38 starters."
+    },
+    {
+      "event_id": "major-2022-masters",
+      "expected_starters": "91",
+      "observed_classified_finishers": "52",
+      "field_verified_complete": "no",
+      "note": "Published table contains classified finishers only."
+    },
+    {
+      "event_id": "major-2022-pga",
+      "expected_starters": "156",
+      "observed_classified_finishers": "78",
+      "field_verified_complete": "no",
+      "note": "Published table contains classified finishers only."
+    },
+    {
+      "event_id": "liv-2022-london",
+      "expected_starters": "48",
+      "observed_classified_finishers": "48",
+      "field_verified_complete": "yes",
+      "note": "Inaugural LIV event; all 48 starters classified."
+    },
+    {
+      "event_id": "liv-2022-portland",
+      "expected_starters": "48",
+      "observed_classified_finishers": "48",
+      "field_verified_complete": "yes",
+      "note": "All 48 starters classified."
+    },
+    {
+      "event_id": "liv-2022-bedminster",
+      "expected_starters": "48",
+      "observed_classified_finishers": "48",
+      "field_verified_complete": "yes",
+      "note": "All 48 starters classified."
+    },
+    {
+      "event_id": "liv-2022-jeddah",
+      "expected_starters": "48",
+      "observed_classified_finishers": "46",
+      "field_verified_complete": "no",
+      "note": "Kevin Na and Martin Kaymer withdrew; their round scores are unavailable here."
+    },
+    {
+      "event_id": "dpwt-2022-tour-championship",
+      "expected_starters": "50",
+      "observed_classified_finishers": "50",
+      "field_verified_complete": "yes",
+      "note": "No-cut field reconciles to published 50 finishers."
+    },
+    {
+      "event_id": "major-2023-masters",
+      "expected_starters": "88",
+      "observed_classified_finishers": "53",
+      "field_verified_complete": "no",
+      "note": "Published table contains 53 classified finishers only."
+    },
+    {
+      "event_id": "dpwt-2023-czech-masters",
+      "expected_starters": "156",
+      "observed_classified_finishers": "69",
+      "field_verified_complete": "no",
+      "note": "Published table contains classified finishers only."
+    },
+    {
+      "event_id": "pga-2024-sentry",
+      "expected_starters": "59",
+      "observed_classified_finishers": "59",
+      "field_verified_complete": "yes",
+      "note": "Published final table and article confirm all 59 starters completed four rounds; no cut."
+    },
+    {
+      "event_id": "liv-2024-las-vegas",
+      "expected_starters": "54",
+      "observed_classified_finishers": "54",
+      "field_verified_complete": "yes",
+      "note": "All 54 starters classified."
+    },
+    {
+      "event_id": "major-2024-masters",
+      "expected_starters": "89",
+      "observed_classified_finishers": "60",
+      "field_verified_complete": "yes",
+      "note": "Full 89-player final table; 60 finisher rows cross-checked against prior Golf News Net extraction and 29 cut rows from this table."
+    },
+    {
+      "event_id": "liv-2024-singapore",
+      "expected_starters": "54",
+      "observed_classified_finishers": "54",
+      "field_verified_complete": "yes",
+      "note": "Full 54-player individual leaderboard with three round scores."
+    },
+    {
+      "event_id": "major-2024-pga",
+      "expected_starters": "156",
+      "observed_classified_finishers": "78",
+      "field_verified_complete": "yes",
+      "note": "Full 156-entry table with 78 finishers 75 missed cuts and three withdrawals; round sums reconcile."
+    },
+    {
+      "event_id": "major-2024-us-open",
+      "expected_starters": "156",
+      "observed_classified_finishers": "74",
+      "field_verified_complete": "yes",
+      "note": "Full 156-player final table with 74 finishers and 82 missed cuts; round sums reconcile."
+    },
+    {
+      "event_id": "major-2024-open",
+      "expected_starters": "157",
+      "observed_classified_finishers": "80",
+      "field_verified_complete": "yes",
+      "note": "Full 157-entry final table has 80 finishers 74 missed cuts and three withdrawals; Romain Langasque has no completed round and start status remains unknown."
+    },
+    {
+      "event_id": "liv-2025-adelaide",
+      "expected_starters": "54",
+      "observed_classified_finishers": "54",
+      "field_verified_complete": "yes",
+      "note": "All 54 starters classified."
+    },
+    {
+      "event_id": "major-2025-masters",
+      "expected_starters": "95",
+      "observed_classified_finishers": "53",
+      "field_verified_complete": "yes",
+      "note": "Full 95-player final leaderboard with 53 classified finishers and 42 missed cuts."
+    },
+    {
+      "event_id": "pga-2025-rbc-heritage",
+      "expected_starters": "72",
+      "observed_classified_finishers": "72",
+      "field_verified_complete": "yes",
+      "note": "Published final table confirms all 72 starters completed four rounds; winner decided in playoff and regulation scores retained."
+    },
+    {
+      "event_id": "major-2025-pga",
+      "expected_starters": "156",
+      "observed_classified_finishers": "74",
+      "field_verified_complete": "yes",
+      "note": "Full 156-entry table with 74 finishers 81 missed cuts and one withdrawal; round sums reconcile."
+    },
+    {
+      "event_id": "major-2025-us-open",
+      "expected_starters": "156",
+      "observed_classified_finishers": "66",
+      "field_verified_complete": "yes",
+      "note": "Full 156-entry table with 66 finishers 88 missed cuts and two withdrawals; round sums reconcile."
+    },
+    {
+      "event_id": "major-2025-open",
+      "expected_starters": "156",
+      "observed_classified_finishers": "70",
+      "field_verified_complete": "yes",
+      "note": "Full 156-player final table with 70 finishers and 86 missed cuts; round sums reconcile."
+    },
+    {
+      "event_id": "liv-2026-riyadh",
+      "expected_starters": "57",
+      "observed_classified_finishers": "57",
+      "field_verified_complete": "yes",
+      "note": "All 57 starters classified; 2026 individual format is 72 holes."
+    },
+    {
+      "event_id": "major-2026-masters",
+      "expected_starters": "91",
+      "observed_classified_finishers": "54",
+      "field_verified_complete": "yes",
+      "note": "Full 91-player final leaderboard; 54 finisher rows cross-checked against prior Golf News Net extraction and 37 cut rows from ESPN."
+    },
+    {
+      "event_id": "pga-2026-wyndham",
+      "expected_starters": "144",
+      "observed_classified_finishers": "81",
+      "field_verified_complete": "no",
+      "note": "Published table contains 81 classified finishers only."
+    },
+    {
+      "event_id": "dpwt-2026-bmw-pga",
+      "expected_starters": "144",
+      "observed_classified_finishers": "72",
+      "field_verified_complete": "no",
+      "note": "Published table contains 72 classified finishers only."
+    }
+  ],
+  "unsourced_major_events": [
+    {
+      "event_id": "major-2018-us-open",
+      "start_date": "2018-06-14",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2018-open",
+      "start_date": "2018-07-19",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2018-pga",
+      "start_date": "2018-08-09",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2019-masters",
+      "start_date": "2019-04-11",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2019-pga",
+      "start_date": "2019-05-16",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2019-us-open",
+      "start_date": "2019-06-13",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2019-open",
+      "start_date": "2019-07-18",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2020-pga",
+      "start_date": "2020-08-06",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2020-us-open",
+      "start_date": "2020-09-17",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2020-masters",
+      "start_date": "2020-11-12",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2021-masters",
+      "start_date": "2021-04-08",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2021-pga",
+      "start_date": "2021-05-20",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2021-us-open",
+      "start_date": "2021-06-17",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2022-us-open",
+      "start_date": "2022-06-16",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2022-open",
+      "start_date": "2022-07-14",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2023-pga",
+      "start_date": "2023-05-18",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2023-us-open",
+      "start_date": "2023-06-15",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2023-open",
+      "start_date": "2023-07-20",
+      "gap_reason": "player_results_not_yet_collected"
+    },
+    {
+      "event_id": "major-2026-pga",
+      "start_date": "2026-05-14",
+      "gap_reason": "reviewed_secondary_table_has_missing_entries_or_score_total_conflicts"
+    },
+    {
+      "event_id": "major-2026-us-open",
+      "start_date": "2026-06-18",
+      "gap_reason": "reviewed_secondary_table_has_missing_entries_or_score_total_conflicts"
+    },
+    {
+      "event_id": "major-2026-open",
+      "start_date": "2026-07-16",
+      "gap_reason": "reviewed_secondary_table_has_missing_entries_or_score_total_conflicts"
+    }
+  ],
+  "regular_tour_event_inventory_complete": false
+}
