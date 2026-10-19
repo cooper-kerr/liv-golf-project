@@ -1,6 +1,13 @@
 # Project reference and status materials
 project-context/
 current-status/
+docs/
+reports/
+.agents/skills
+synthetic-controls-experiment
+AGENTS.md
+
+
 
 # Downloaded public pages can be regenerated from source_requests.csv. Keep
 # declarations, templates, and derived tables under version control instead.
